@@ -2,7 +2,7 @@
 
 import logging
 from typing import Any, Dict
-from .gmail_client import GmailClient
+from .client import GmailClient
 
 logger = logging.getLogger(__name__)
 

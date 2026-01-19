@@ -9,7 +9,7 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 import mcp.types as types
 
-from .tools import initialize_gmail_client, get_unread_emails, create_draft_reply
+from .handlers import initialize_gmail_client, get_unread_emails, create_draft_reply
 
 # Load environment variables
 load_dotenv()

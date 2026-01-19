@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "gmail": {
-      "command": "python",
+      "command": "C:\\Users\\Home\\Downloads\\MLI\\.venv\\Scripts\\python.exe",
       "args": [
         "-m",
         "src.server"

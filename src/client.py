@@ -268,19 +268,4 @@ class GmailClient:
             raise Exception(f"Failed to create draft reply: {error}")
 
 
-# Test function for standalone execution
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    
-    print("Testing Gmail Client...")
-    client = GmailClient()
-    
-    print("\nFetching unread emails...")
-    emails = client.get_unread_emails(max_results=5)
-    
-    for i, email in enumerate(emails, 1):
-        print(f"\n--- Email {i} ---")
-        print(f"From: {email['sender']}")
-        print(f"Subject: {email['subject']}")
-        print(f"Snippet: {email['snippet'][:100]}...")
-        print(f"Thread ID: {email['thread_id']}")
+
