@@ -19,15 +19,15 @@ A high-performance Model Context Protocol (MCP) server that enables AI assistant
 
 ```mermaid
 graph TD
-    User([👤 User]) <-->|Natural Language| Claude([🤖 Claude Desktop])
+    User(["👤 User"]) <-->|"Natural Language"| Claude(["🤖 Claude Desktop"])
     
     subgraph "MCP Server (Local Machine)"
-        Claude <-->|JSON-RPC (stdio)| Main[src/main.py]
-        Main -->|Dispatch| Handler[src/handlers.py]
-        Handler -->|Call| Client[src/client.py]
+        Claude <-->|"JSON-RPC (stdio)"| Main["src/main.py"]
+        Main -->|Dispatch| Handler["src/handlers.py"]
+        Handler -->|Call| Client["src/client.py"]
     end
     
-    Client <-->|HTTPS / OAuth 2.0| Gmail([☁️ Google Gmail API])
+    Client <-->|"HTTPS / OAuth 2.0"| Gmail(["☁️ Google Gmail API"])
     
     style User fill:#f9f,stroke:#333
     style Claude fill:#e1f5fe,stroke:#01579b
